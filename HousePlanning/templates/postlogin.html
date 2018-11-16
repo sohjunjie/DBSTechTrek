@@ -10,6 +10,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+        <style>
+            .header_text {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        
+            td {
+                padding: 10px;
+            }
+        </style>
+
+
     <title>DBS startEarly</title>
 
     <!-- Bootstrap core CSS -->
@@ -26,7 +38,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <img src="{% static "DBS_LOGO_WHITE1.png" %}" alt='DBS logo' width="128" height="50">
-            <a class="navbar-brand" href="#">DBS startEarly</a>
+            <a class="navbar-brand" href="#">Maximum Loan Amt: S$10000</a>
+            <a class="navbar-brand" href="#">iw036</a>
         </div>
     </nav>
 
@@ -65,11 +78,643 @@
 
     <!-- Page Content -->
     <section class="py-5">
-        <div class="container">
-            <h1>DBS startEarly</h1>
-            <p>Feeling lost about how to start a family?</p>
-            <p>DBS startEarly is here to give you answers to your problems. Click on the button above to get started</p>
+        
+
+        <table class="filter_placement_table">
+            <tbody>
+                <tr>
+                    <td>
+                        <h1> Filters: </h1>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select House
+                                type
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Mature HDB Flats</a></li>
+                                <li><a href="#">Non-Mature HDB Flats</a></li>
+                                <li><a href="#">Private - Landed</a></li>
+                                <li><a href="condo">Private - Non-Landed</a></li>
+                                <li><a href="home">All</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="accordion" id="accordionExample">
+            <!-- mature -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <p id="room_header" class="header_text">Mature HDB 2-Room </p>
+                        </button>
+                    </h5>
+                </div>
+        
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table class="content-placement">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- picture of the house -->
+                                        <img src="{% static "2room.jpg" %}"alt="2 room flat">
+                                    </td>
+                                    <td>
+                                        <table class="content-placement">
+                                            <tr>
+                                                <td>
+                                                    <strong>Type: </strong> <span class="details">Mature HDB 2 Room</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan duration: </strong> <span class="details">30 years</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan plan: </strong>
+        
+                                                    <table class="loan-placement">
+                                                        <tr>
+                                                            <td>
+                                                                Year 1
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 2
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 3
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 4 and thereafter
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-success"> Loan now! </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header" id="headingOne2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne2"
+                            aria-expanded="true" aria-controls="collapseOne2">
+                            <p id="room_header" class="header_text">Mature HDB 5-Room </p>
+                        </button>
+                    </h5>
+                </div>
+        
+                <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table class="content-placement">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- picture of the house -->
+                                        <img src="{% static "5room.jpg" %}"alt="2 room flat" width="640" height="427">
+                                    </td>
+                                    <td>
+                                        <table class="content-placement">
+                                            <tr>
+                                                <td>
+                                                    <strong>Type: </strong> <span class="details">Mature HDB 5 Room</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan duration: </strong> <span class="details">30 years</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan plan: </strong>
+        
+                                                    <table class="loan-placement">
+                                                        <tr>
+                                                            <td>
+                                                                Year 1
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 2
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 3
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 4 and thereafter
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-success"> Loan now! </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+            <!-- non mature -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="true" aria-controls="collapseTwo">
+                            <p id="room_header" class="header_text">Non-Mature HDB 2-Room </p>
+                        </button>
+                    </h5>
+                </div>
+        
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table class="content-placement">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- picture of the house -->
+                                        <img src="{% static "nm2room.jpg" %}"alt="2 room flat">
+                                    </td>
+                                    <td>
+                                        <table class="content-placement">
+                                            <tr>
+                                                <td>
+                                                    <strong>Type: </strong> <span class="details">Non-Mature HDB 2 Room</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan duration: </strong> <span class="details">30 years</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan plan: </strong>
+        
+                                                    <table class="loan-placement">
+                                                        <tr>
+                                                            <td>
+                                                                Year 1
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 2
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 3
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 4 and thereafter
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-success"> Loan now! </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header" id="headingTwo2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo2"
+                            aria-expanded="true" aria-controls="collapseTwo2">
+                            <p id="room_header" class="header_text">Non-Mature Executive flat</p>
+                        </button>
+                    </h5>
+                </div>
+        
+                <div id="collapseTwo2" class="collapse show" aria-labelledby="headingTwo2" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table class="content-placement">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- picture of the house -->
+                                        <img src="{% static "executive.jpg" %}"alt="2 room flat" width="640" height="427">
+                                    </td>
+                                    <td>
+                                        <table class="content-placement">
+                                            <tr>
+                                                <td>
+                                                    <strong>Type: </strong> <span class="details">Non-Mature HDB 2 Room</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan duration: </strong> <span class="details">30 years</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan plan: </strong>
+        
+                                                    <table class="loan-placement">
+                                                        <tr>
+                                                            <td>
+                                                                Year 1
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 2
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 3
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 4 and thereafter
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-success"> Loan now! </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <!-- condominiums -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="true" aria-controls="collapseThree">
+                            <p id="room_header" class="header_text">Condominiums</p>
+                        </button>
+                    </h5>
+                </div>
+        
+                <div id="collapseThree" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table class="content-placement">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- picture of the house -->
+                                        <img src="{% static "condo.jpg" %}"alt="2 room flat" width="640" height="427">
+                                    </td>
+                                    <td>
+                                        <table class="content-placement">
+                                            <tr>
+                                                <td>
+                                                    <strong>Type: </strong> <span class="details">Condominiums</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan duration: </strong> <span class="details">40 years</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan plan: </strong>
+        
+                                                    <table class="loan-placement">
+                                                        <tr>
+                                                            <td>
+                                                                Year 1
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 2
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 3
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 4 and thereafter
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-success"> Loan now! </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- landed property -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="true" aria-controls="collapseFour">
+                            <p id="room_header" class="header_text">Terrace house</p>
+                        </button>
+                    </h5>
+                </div>
+        
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table class="content-placement">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- picture of the house -->
+                                        <img src="{% static "terrace.jpg" %}"alt="2 room flat" width="640" height="427">
+                                    </td>
+                                    <td>
+                                        <table class="content-placement">
+                                            <tr>
+                                                <td>
+                                                    <strong>Type: </strong> <span class="details">Terrace house</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan duration: </strong> <span class="details">60 years</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan plan: </strong>
+                                                    <table class="loan-placement">
+                                                        <tr>
+                                                            <td>
+                                                                Year 1
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 2
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 3
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 4 and thereafter
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-success"> Loan now! </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour2"
+                            aria-expanded="true" aria-controls="collapseFour2">
+                            <p id="room_header" class="header_text">Bungalow</p>
+                        </button>
+                    </h5>
+                </div>
+        
+                <div id="collapseFour2" class="collapse show" aria-labelledby="headingFour2" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table class="content-placement">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- picture of the house -->
+                                        <img src="{% static "bungalow.png" %}"alt="2 room flat" width="640" height="427">
+                                    </td>
+                                    <td>
+                                        <table class="content-placement">
+                                            <tr>
+                                                <td>
+                                                    <strong>Type: </strong> <span class="details">Bungalow</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan duration: </strong> <span class="details">60 years</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Loan plan: </strong>
+                                                    <table class="loan-placement">
+                                                        <tr>
+                                                            <td>
+                                                                Year 1
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 2
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 3
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Year 4 and thereafter
+                                                            </td>
+                                                            <td>
+                                                                FHR8 + 1.38% p.a.
+                                                            </td>
+                                                        </tr>
+        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-success"> Loan now! </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
         </div>
+
     </section>
 
     <!-- Footer -->

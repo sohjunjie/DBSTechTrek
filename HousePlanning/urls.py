@@ -6,6 +6,7 @@ from django.conf.urls import include
 urlpatterns = [
     path('', views.IndexPage, name="index"),
     path('home', views.HomePage, name="home"),
+    path('condo', views.CondoPage, name="condo"),
     path('', views.LogoutPage, name="logout"),
 ]
 
