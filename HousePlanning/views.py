@@ -60,21 +60,23 @@ def IndexPage(request):
     code = request.GET.get('code', None)
     state = request.GET.get('state', None)
     if code and state:
-        return redirect(HomePage, code=code)
+        print('test')
+        return redirect(HomePage)
 
-    return render(request, 'index.html', {'code': code})
+    return render(request, 'index.html')
 
 
-def HomePage(request, code):
-    basicParam = 'OTkyNGI3NGYtMzZhNy00NThhLWFmZTYtYzNhOWY5ZjI3MGI3OmRlNWU1MzdkLWEzYmMtNDhhMS1hNDU1LTkyOWRkYjQ4MmE2ZA=='
-    headers = {'Authorization': 'Basic ' + basicParam,
-               'grant_type': 'token',
-               'code': code
-              }
+def HomePage(request):
+    # code = '123'
+    # basicParam = 'OTkyNGI3NGYtMzZhNy00NThhLWFmZTYtYzNhOWY5ZjI3MGI3OmRlNWU1MzdkLWEzYmMtNDhhMS1hNDU1LTkyOWRkYjQ4MmE2ZA=='
+    # headers = {'Authorization': 'Basic ' + basicParam,
+    #            'grant_type': 'token',
+    #            'code': code
+    #           }
 
-    print(headers)
+    # print(headers)
 
-    return render(request, 'house.html')
+    return render(request, 'postlogin.html')
 
 
 def LogoutPage(request):
