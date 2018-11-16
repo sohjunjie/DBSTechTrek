@@ -10,8 +10,8 @@ class HouseLoanAPIView(APIView):
     def get(self, request, income):
         headers = {
             'Content-Type': 'application/json',
-            'clientId': 'clientId2',
-            'accessToken': 'eyJhbGciOiJIUzI1NiJ9.eyJpc3MiIDogImh0dHBzOi8vY2FwaS5kYnMuY29tIiwiaWF0IiA6IDE1NDIzNDUzMTExMTEsICJleHAiIDogMTU0MjM0ODkxMTExMSwic3ViIiA6ICJTVmN3TXpZPSIsInB0eXR5cGUiIDogMSwiY2xuaWQiIDogImNsaWVudElkMiIsImNsbnR5cGUiIDogIjIiLCAiYWNjZXNzIiA6ICIxRkEiLCJzY29wZSIgOiAiMkZBLVNNUyIgLCJhdWQiIDogImh0dHBzOi8vY2FwaS5kYnMuY29tL2FjY2VzcyIgLCJqdGkiIDogIjgzNzU4NDIxMjgzNTE5MzQ4OTgiICwiY2luIiA6ICJRMGxPTURBd01EQXgifQ.hJ4JP_GBV63Hq6SbhF-ozSCeN8l0E0fs61BfDFGxoqc',
+            'clientId': '9924b74f-36a7-458a-afe6-c3a9f9f270b7',
+            'accessToken': 'eyJhbGciOiJIUzI1NiJ9.eyJpc3MiIDogImh0dHBzOi8vY2FwaS5kYnMuY29tIiwiaWF0IiA6IDE1NDIzNDkzMjExMjAsICJleHAiIDogMTU0MjM1MjkyMTEyMCwic3ViIiA6ICJTVmN3TXpZPSIsInB0eXR5cGUiIDogMSwiY2xuaWQiIDogIjk5MjRiNzRmLTM2YTctNDU4YS1hZmU2LWMzYTlmOWYyNzBiNyIsImNsbnR5cGUiIDogIjIiLCAiYWNjZXNzIiA6ICIxRkEiLCJzY29wZSIgOiAiMkZBLVNNUyIgLCJhdWQiIDogImh0dHBzOi8vY2FwaS5kYnMuY29tL2FjY2VzcyIgLCJqdGkiIDogIjMwMDI5NjYwMzE4Mjk4MTAwMTUiICwiY2luIiA6ICJRMGxPTURBd01EQXgifQ.Cyblc_7LQG6ybEpz39PB_BbyJvoEhq-7Y9k0tgbpsLY',
         }
         data = json.dumps({
             "homeLoanAllpicants":
