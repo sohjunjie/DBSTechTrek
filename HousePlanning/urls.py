@@ -5,4 +5,6 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('', views.IndexPage, name="index"),
+    path('', views.HomePage, name="home"),
 ]
+
