@@ -1,0 +1,88 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DBS startEarly</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static " vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static " css/half-slider.css" %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img src="{% static " DBS_LOGO_WHITE1.png" %}" alt='DBS logo' width="128" height="50">
+            <a class="navbar-brand" href="#">DBS startEarly</a>
+        </div>
+    </nav>
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url({% static " family.jpg" %}")>
+                    <div class="carousel-caption d-none d-md-block">
+                        <button id='btn' type="button" class="btn btn-success">
+                            <a style="color:white" href="https://www.dbs.com/sandbox/api/sg/v1/oauth/authorize?client_id=b3cc49e3-f423-4bd3-9488-994ad327773f&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2F&scope=Read&response_type=code&state=0399">House
+                                Loan</a>
+                        </button>
+                        <button id='btn' type="button" class="btn btn-success">
+                            <a style="color:white" href="https://www.dbs.com/sandbox/api/sg/v1/oauth/authorize?client_id=b3cc49e3-f423-4bd3-9488-994ad327773f&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2F&scope=Read&response_type=code&state=0399">Child
+                                Planning</a>
+                        </button>
+                        <button id='btn' type="button" class="btn btn-success">
+                            <a style="color:white" href="https://www.dbs.com/sandbox/api/sg/v1/oauth/authorize?client_id=b3cc49e3-f423-4bd3-9488-994ad327773f&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2F&scope=Read&response_type=code&state=0399">Joint
+                                Investment</a>
+                        </button>
+                        <button id='btn' type="button" class="btn btn-success">
+                            <a style="color:white" href="https://www.dbs.com/sandbox/api/sg/v1/oauth/authorize?client_id=b3cc49e3-f423-4bd3-9488-994ad327773f&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2F&scope=Read&response_type=code&state=0399">Coming
+                                Soon..</a>
+                        </button>
+                        <button id='btn' type="button" class="btn btn-success">
+                            <a style="color:white" href="https://www.dbs.com/sandbox/api/sg/v1/oauth/authorize?client_id=b3cc49e3-f423-4bd3-9488-994ad327773f&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2F&scope=Read&response_type=code&state=0399">Coming
+                                Soon..</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+            <h1>DBS startEarly</h1>
+            <p>Feeling lost about how to start a family?</p>
+            <p>DBS startEarly is here to give you answers to your problems. Click on the button above to get started</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Team B6 (Techtrek 2018)</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static " vendor/jquery/jquery.min.js" %}"></script>
+    <script src="{% static " vendor/bootstrap/js/bootstrap.bundle.min.js" %}""></script>
+
+</body>
+
+</html>
