@@ -33,6 +33,9 @@ def HomePage(request, code):
 
     return render(request, 'postlogin.html')
 
+def CondoPage(request):
+    return render(request, 'condo.html')
+
 
 def LogoutPage(request):
     logout(request)
