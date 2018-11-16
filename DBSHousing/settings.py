@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'backend',
+    'HousePlanning',
+    'rest_framework',
+    'bootstrap3',
+    'django_js_reverse',
 ]
 
 MIDDLEWARE = [
