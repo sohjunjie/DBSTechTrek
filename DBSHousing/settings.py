@@ -39,10 +39,22 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'backend',
     'HousePlanning',
+    # 'provider.oauth2',
     'rest_framework',
     'bootstrap3',
     'django_js_reverse',
 ]
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+#     )
+# }
+
+# AUTHENTICATION_BACKENDS = (
+#     'oauth2_provider.backends.OAuth2Backend',
+#     #'django.contrib.auth.backends.ModelBackend'
+# )
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
